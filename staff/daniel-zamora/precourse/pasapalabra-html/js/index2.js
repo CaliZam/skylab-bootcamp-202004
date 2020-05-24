@@ -21,5 +21,15 @@ function updateLayout(rosco) {
 
 };
 
-
 updateLayout(rosco);
+
+class Letter {
+    constructor(indexLetter, currentLetter, hint, question, answer) {
+        this.indexLetter = indexLetter;
+        this.currentLetter = currentLetter;
+        this.question = question;
+        this.hint = hint;
+        this.answer = answer;
+
+        this.isGameOver = false;
+    }
