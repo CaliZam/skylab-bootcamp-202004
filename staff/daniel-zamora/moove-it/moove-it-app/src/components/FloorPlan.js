@@ -93,6 +93,8 @@ export default function PlaneBuilder({ blueprintId, onGoToHome}) {
     const hanbleGoToHome = (e) => {
         e.preventDefault()
         //TODO se guarda automaticamente
+        delete sessionStorage.items
+        setPlacedItems([])
         onGoToHome()
     }
 

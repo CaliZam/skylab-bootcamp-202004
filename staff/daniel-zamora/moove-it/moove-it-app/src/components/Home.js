@@ -25,7 +25,7 @@ export default function Home({blueprint, onGoToFloorPlan, onLogout}) {
         } catch(error) {
             throw error
         }
-    },[])
+    },[userBlueprints])
 
 
     const handlePlaneInit = e =>{
